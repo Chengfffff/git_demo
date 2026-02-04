@@ -1,0 +1,26 @@
+## 1. 忽略編譯產生的檔案 (最重要！)
+## 這些檔案每次按 "建置" 都會重新產生，不應該上傳
+[Bb]in/
+[Oo]bj/
+
+## 2. 忽略 Visual Studio 的使用者設定與暫存檔
+## 這些是你個人的視窗設定，不需要給其他隊員
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## 3. 忽略測試結果
+TestResults/
+
+## 4. 如果你有用 NuGet 套件還原 (新版通常不需要這行，但舊專案可能需要)
+packages/
+!packages/build/
+
+## 5. 忽略作業系統產生的縮圖檔
+Thumbs.db
+.DS_Store
+
+## 6. (選用) 如果你的連線字串放在特定的 config 檔且包含密碼，記得加進來
+# secret.config
